@@ -20,6 +20,7 @@ public static void main(String[] args) {
 	WebDriver driver = new FirefoxDriver(firefoxOptions); //Creating an object of FirefoxDriver	 
 	
 	//firefoxOptions.addArguments("--headless");
+	firefoxOptions.setHeadless(true);
 	
 	//System.setProperty("webdriver.chrome.driver","C:\\Users\\japat\\Desktop\\Aparna\\chromedriver.exe");
 	//System.setProperty("webdriver.chrome.driver","/home/ubuntu/selenium/chromedriver");
