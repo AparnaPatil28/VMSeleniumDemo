@@ -3,10 +3,10 @@ package com.mycompany.app.addressbook_selenium;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.Test;
 
 public class App
@@ -15,19 +15,19 @@ public class App
 
 public static void main(String[] args) {
 	
-	System.setProperty("webdriver.gecko.driver","geckodriver"); // Setting system properties of FirefoxDriver
-	FirefoxOptions firefoxOptions = new FirefoxOptions();
-	WebDriver driver = new FirefoxDriver(firefoxOptions); //Creating an object of FirefoxDriver	 
+	//System.setProperty("webdriver.gecko.driver","geckodriver"); // Setting system properties of FirefoxDriver
+	//FirefoxOptions firefoxOptions = new FirefoxOptions();
+	//WebDriver driver = new FirefoxDriver(firefoxOptions); //Creating an object of FirefoxDriver	 
 	
-	firefoxOptions.addArguments("--headless");
+	//firefoxOptions.addArguments("--headless");
 	//firefoxOptions.setHeadless(false);
 	
 	//System.setProperty("webdriver.chrome.driver","C:\\Users\\japat\\Desktop\\Aparna\\chromedriver.exe");
-	//System.setProperty("webdriver.chrome.driver","/home/ubuntu/selenium/chromedriver");
-	//ChromeOptions chromeOptions = new ChromeOptions();
-	//WebDriver driver = new ChromeDriver(chromeOptions);
+	System.setProperty("webdriver.chrome.driver","/home/ubuntu/selenium/chromedriver");
+	ChromeOptions chromeOptions = new ChromeOptions();
+	WebDriver driver = new ChromeDriver(chromeOptions);
 		 
-	//chromeOptions.addArguments("--headless");
+	chromeOptions.addArguments("--headless");
 	System.out.println("Hi, Welcome to Demo on Selenium WebDriver");
 
 
