@@ -15,7 +15,7 @@ public class App
 
 public static void main(String[] args) {
 	
-	System.setProperty("webdriver.gecko.driver","/geckodriver"); // Setting system properties of FirefoxDriver
+	System.setProperty("webdriver.gecko.driver","geckodriver"); // Setting system properties of FirefoxDriver
 	FirefoxOptions firefoxOptions = new FirefoxOptions();
 	WebDriver driver = new FirefoxDriver(firefoxOptions); //Creating an object of FirefoxDriver	 
 	
