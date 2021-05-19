@@ -23,8 +23,8 @@ public static void main(String[] args) {
 	
 	//System.setProperty("webdriver.chrome.driver","C:\\Users\\japat\\Desktop\\Aparna\\chromedriver.exe");
 	System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver");
-	ChromeOptions chromeOptions = new ChromeOptions();
 	WebDriver driver = new ChromeDriver(chromeOptions);
+	ChromeOptions chromeOptions = new ChromeOptions();
 		 
 	chromeOptions.addArguments("--headless");
 	System.out.println("Hi, Welcome to Demo on Selenium WebDriver");
