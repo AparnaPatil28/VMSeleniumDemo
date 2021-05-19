@@ -36,6 +36,7 @@ public static void main(String[] args) {
 	 driver.findElement(By.id("gwt-uid-5")).sendKeys("Aparna");
 	 driver.findElement(By.id("gwt-uid-7")).sendKeys("DevOps");
 	 driver.findElement(By.id("gwt-uid-9")).sendKeys("9834562709");
+	 driver.findElement(By.id("gwt-uid-11")).sendKeys("abc@abvc");
 	 driver.findElement(By.id("gwt-uid-13")).sendKeys("01/01/2015");
 	 driver.findElement(By.className("v-button-primary")).click();
 	 //Thread.sleep(5000);
