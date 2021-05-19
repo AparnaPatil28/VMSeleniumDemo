@@ -22,7 +22,7 @@ public static void main(String[] args) {
 	//firefoxOptions.addArguments("--headless");
 	
 	//System.setProperty("webdriver.chrome.driver","C:\\Users\\japat\\Desktop\\Aparna\\chromedriver.exe");
-	System.setProperty("webdriver.chrome.driver","/home/ubuntu/chromedriver");
+	System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver");
 	ChromeOptions chromeOptions = new ChromeOptions();
 	WebDriver driver = new ChromeDriver(chromeOptions);
 		 
