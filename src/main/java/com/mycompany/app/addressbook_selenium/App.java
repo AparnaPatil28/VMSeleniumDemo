@@ -15,17 +15,17 @@ public class App
 
 public static void main(String[] args) {
 	
-	//System.setProperty("webdriver.gecko.driver","geckodriver"); // Setting system properties of FirefoxDriver
-	//FirefoxOptions firefoxOptions = new FirefoxOptions();
-	//WebDriver driver = new FirefoxDriver(firefoxOptions); //Creating an object of FirefoxDriver	 
+	System.setProperty("webdriver.gecko.driver","geckodriver"); // Setting system properties of FirefoxDriver
+	FirefoxOptions firefoxOptions = new FirefoxOptions();
+	firefoxOptions.addArguments("--headless");
+	WebDriver driver = new FirefoxDriver(firefoxOptions); //Creating an object of FirefoxDriver	 
 	
-	//firefoxOptions.addArguments("--headless");
 	
 	//System.setProperty("webdriver.chrome.driver","C:\\Users\\japat\\Desktop\\Aparna\\chromedriver.exe");
-	System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver");
-	ChromeOptions chromeOptions = new ChromeOptions();
-	chromeOptions.addArguments("--headless");
-	WebDriver driver = new ChromeDriver(chromeOptions);
+	//System.setProperty("webdriver.chrome.driver","/home/edureka/chromedriver");
+	//ChromeOptions chromeOptions = new ChromeOptions();
+	//chromeOptions.addArguments("--headless");
+	//WebDriver driver = new ChromeDriver(chromeOptions);
 		 
 	System.out.println("Hi, Welcome to Demo on Selenium WebDriver");
 
