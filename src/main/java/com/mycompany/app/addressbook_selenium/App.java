@@ -41,5 +41,6 @@ public static void main(String[] args) {
 	 driver.findElement(By.className("v-button-primary")).click();
 	 //Thread.sleep(5000);
 	 driver.quit();
+	System.out.println("Done Successfully");
 	}
 }
